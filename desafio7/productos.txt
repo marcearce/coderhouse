@@ -1,0 +1,1 @@
+[{"title":"teclado mecanico","price":100,"tumbnail":"imagen","id":1},{"title":"mouse","price":100,"tumbnail":"imagen","id":2},{"title":"monitor","price":100,"tumbnail":"imagen","id":3}]

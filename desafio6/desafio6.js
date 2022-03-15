@@ -44,6 +44,14 @@ class Archivo {
       console.log(error);
     }
   }
+
+  async deleteProduct() {
+    try {
+      let data = await fs.promises.unlink(this.nombre);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 }
 
 let archivo = new Archivo("productos.txt");
@@ -70,6 +78,12 @@ const readProducts = async () => {
   console.log(products);
 };
 
+const deleteProduct = async () => {
+  await archivo.deleteProduct();
+};
+
 addProduct();
 
 readProducts();
+
+//deleteProduct();

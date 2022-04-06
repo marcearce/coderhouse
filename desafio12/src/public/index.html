@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chat - Marce</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="center">
+      <div class="chat">
+        <div class="contact bar">
+          <div class="pic"></div>
+          <div class="name">Grupo Backend Javascript</div>
+          <!-- <div class="online">
+            Usuario en línea:
+            <div id="usersOnline"></div>
+          </div> -->
+        </div>
+        <div class="messages" id="chat">
+          <!-- <div class="time" id="newuser">Today at 11:41</div> -->
+          <!-- <div class="message me">
+            hola, soy marceas da asd asd a asd asds
+          </div>
+          <div class="message">soy otra persona</div> -->
+
+          <!-- <div class="message stark">
+            <div class="typing typing-1"></div>
+            <div class="typing typing-2"></div>
+            <div class="typing typing-3"></div>
+          </div> -->
+        </div>
+        <div class="input">
+          <!-- <i class="fas fa-camera"></i><i class="far fa-laugh-beam"></i
+          > -->
+          <input
+            placeholder="Escribe un mensaje aquí"
+            type="text"
+            id="chatInput"
+          />
+          <!-- <i class="fas fa-microphone"></i> -->
+        </div>
+      </div>
+    </div>
+    <!-- partial -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,659 @@
+{
+	"info": {
+		"_postman_id": "20211819-963b-4d81-9137-ccf8b7604c40",
+		"name": "entregaFinalPimera",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Carts",
+			"item": [
+				{
+					"name": "get-cart-test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/api/carts/28eecb1c79c69adb2446eb6e91540dc6",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"carts",
+								"28eecb1c79c69adb2446eb6e91540dc6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-product-in-cart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 1\r\n}"
+						},
+						"url": {
+							"raw": "{{server}}/api/carts/28eecb1c79c69adb2446eb6e91540dc6/products",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"carts",
+								"28eecb1c79c69adb2446eb6e91540dc6",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-cart-products-list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/api/carts/28eecb1c79c69adb2446eb6e91540dc6/products",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"carts",
+								"28eecb1c79c69adb2446eb6e91540dc6",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delet-product-from-cart",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/api/carts/28eecb1c79c69adb2446eb6e91540dc6/products/200",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"carts",
+								"28eecb1c79c69adb2446eb6e91540dc6",
+								"products",
+								"200"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "get-products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/api/products",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get-products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{server}}/api/products",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "896"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"380-EuAhb/QWslSr4EtwNWfzHcM8bIo\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 19 Apr 2022 05:42:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"nombre\": \"ejemplo222\",\n        \"descripcion\": \"descripcion lorem\",\n        \"codigo\": \"codigo ejemplo\",\n        \"foto\": \"foto ejemplo\",\n        \"precio\": \"1.0\",\n        \"stock\": \"5\",\n        \"id\": 1,\n        \"timestamp\": \"2022-04-12T22:17:17.828Z\"\n    },\n    {\n        \"nombre\": \"ejemplo222\",\n        \"descripcion\": \"descripcion lorem\",\n        \"codigo\": \"codigo ejemplo\",\n        \"foto\": \"foto ejemplo\",\n        \"precio\": \"1.0\",\n        \"stock\": \"5\",\n        \"id\": 2,\n        \"timestamp\": \"2022-04-12T22:28:16.543Z\"\n    },\n    {\n        \"nombre\": \"ejemplo222\",\n        \"descripcion\": \"descripcion lorem\",\n        \"codigo\": \"codigo ejemplo\",\n        \"foto\": \"foto ejemplo\",\n        \"precio\": \"1.0\",\n        \"stock\": \"5\",\n        \"id\": 3,\n        \"timestamp\": \"2022-04-12T22:28:17.232Z\"\n    },\n    {\n        \"nombre\": \"ejemplo222\",\n        \"descripcion\": \"descripcion lorem\",\n        \"codigo\": \"codigo ejemplo\",\n        \"foto\": \"foto ejemplo\",\n        \"precio\": \"1.0\",\n        \"stock\": \"5\",\n        \"id\": 4,\n        \"timestamp\": \"2022-04-12T22:28:17.659Z\"\n    },\n    {\n        \"nombre\": \"ejemplo222\",\n        \"descripcion\": \"descripcion lorem\",\n        \"codigo\": \"codigo ejemplo\",\n        \"foto\": \"foto ejemplo\",\n        \"precio\": \"1.0\",\n        \"stock\": \"5\",\n        \"id\": 5,\n        \"timestamp\": \"2022-04-12T22:28:17.874Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get-product-from-id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/api/products/2",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get-product-from-id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{server}}/api/products/2",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"api",
+										"products",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "178"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b2-K9gtlT4mmKtl3vyVyzYIrwurmAw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 19 Apr 2022 05:43:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"nombre\": \"ejemplo222\",\n    \"descripcion\": \"descripcion lorem\",\n    \"codigo\": \"codigo ejemplo\",\n    \"foto\": \"foto ejemplo\",\n    \"precio\": \"1.0\",\n    \"stock\": \"5\",\n    \"id\": 2,\n    \"timestamp\": \"2022-04-12T22:28:16.543Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "add-product",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "admin",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"teclado mecánico red dragon\",\r\n    \"descripcion\": \"descripcion lorem\",\r\n    \"codigo\": \"codigo ejemplo\",\r\n    \"foto\": \"foto ejemplo\",\r\n    \"precio\": \"100\",\r\n    \"stock\": \"500\"\r\n}"
+						},
+						"url": {
+							"raw": "{{server}}/api/products",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add-product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "admin",
+										"value": "true",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"teclado mecánico\",\r\n    \"descripcion\": \"descripcion lorem\",\r\n    \"codigo\": \"codigo ejemplo\",\r\n    \"foto\": \"foto ejemplo\",\r\n    \"precio\": \"100\",\r\n    \"stock\": \"50\"\r\n}"
+								},
+								"url": {
+									"raw": "{{server}}/api/products",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 19 Apr 2022 05:46:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "add-product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "admin",
+										"value": "true",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"teclado mecánico red dragon\",\r\n    \"descripcion\": \"descripcion lorem\",\r\n    \"codigo\": \"codigo ejemplo\",\r\n    \"foto\": \"foto ejemplo\",\r\n    \"precio\": \"100\",\r\n    \"stock\": \"500\"\r\n}"
+								},
+								"url": {
+									"raw": "{{server}}/api/products",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "198"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c6-MFqPF+zZVs8G4W+vIyQ9LmMwQ6U\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 19 Apr 2022 05:49:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"nombre\": \"teclado mecánico red dragon\",\n    \"descripcion\": \"descripcion lorem\",\n    \"codigo\": \"codigo ejemplo\",\n    \"foto\": \"foto ejemplo\",\n    \"precio\": \"100\",\n    \"stock\": \"500\",\n    \"timestamp\": \"2022-04-19T05:49:39.462Z\",\n    \"id\": 7\n}"
+						}
+					]
+				},
+				{
+					"name": "update-product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "admin",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"teclado mecánico red dragon deimos\",\r\n    \"descripcion\": \"descripcion lorem\",\r\n    \"codigo\": \"codigo ejemplo\",\r\n    \"foto\": \"foto ejemplo\",\r\n    \"precio\": \"100\",\r\n    \"stock\": \"500\"\r\n}"
+						},
+						"url": {
+							"raw": "{{server}}/api/products/7",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update-product",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "admin",
+										"value": "true",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\": \"teclado mecánico red dragon deimos\",\r\n    \"descripcion\": \"descripcion lorem\",\r\n    \"codigo\": \"codigo ejemplo\",\r\n    \"foto\": \"foto ejemplo\",\r\n    \"precio\": \"100\",\r\n    \"stock\": \"500\"\r\n}"
+								},
+								"url": {
+									"raw": "{{server}}/api/products/7",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"api",
+										"products",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "205"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cd-04z+yQDhhLZ+HqaoG8NcKgpqnAQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 19 Apr 2022 05:52:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"nombre\": \"teclado mecánico red dragon deimos\",\n    \"descripcion\": \"descripcion lorem\",\n    \"codigo\": \"codigo ejemplo\",\n    \"foto\": \"foto ejemplo\",\n    \"precio\": \"100\",\n    \"stock\": \"500\",\n    \"id\": 7,\n    \"timestamp\": \"2022-04-19T05:52:19.437Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete-product-from-id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "admin",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/api/products/7",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "admin",
+										"value": "true",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{server}}/api/products/7",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"api",
+										"products",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "15"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f-KTlmTXixt2NAlFfLQZUPmxWLuec\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 19 Apr 2022 05:53:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Product deleted"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}

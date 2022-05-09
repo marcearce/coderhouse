@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/marcearce/coderhouse/issues"
   },
-  "homepage": "https://github.com/marcearce/coderhouse#readme"
+  "homepage": "https://github.com/marcearce/coderhouse#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }

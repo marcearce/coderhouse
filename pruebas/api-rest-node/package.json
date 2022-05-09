@@ -1,5 +1,5 @@
 {
-  "name": "primerabd",
+  "name": "api-rest-node",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,9 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3",
-    "knex": "^1.0.7",
-    "pg": "^8.7.3",
-    "sqlite3": "^5.0.4"
+    "express": "^4.18.0"
   }
 }

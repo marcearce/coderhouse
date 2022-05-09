@@ -1,0 +1,3 @@
+#hola
+#dbname =  ecommerce
+

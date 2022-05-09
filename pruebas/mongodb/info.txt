@@ -1,0 +1,11 @@
+Campos:
+
+- nombre tipo varchar 15 caracteres no nulo
+
+- codigo tipo varchar 10 caracteres no nulo
+
+- precio tipo float
+
+- stock tipo entero
+
+- id clave primaria autoincremental no nula
